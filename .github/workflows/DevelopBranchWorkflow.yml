@@ -6,7 +6,8 @@ on:
 jobs:
   CreateIssuesFromTodos:
     uses: ggqcompany/github-actions/.github/workflows/CreateIssueFromTodo.yml@main
-    secrets: inherit
+    secrets:
+      TODO_ACTIONS_MONGO_URL: ${{ secrets.TODO_ACTIONS_MONGO_URL }}
     with:
       repository: ${{ github.repository }}
       ref_name: ${{ github.ref_name }}

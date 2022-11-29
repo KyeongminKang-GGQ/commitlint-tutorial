@@ -2,7 +2,6 @@ module.exports = {
   extends: ["@commitlint/config-conventional"],
   rules: {
     "type-case": [2, "always", "pascal-case"],
-    "type-empty": [2, "never"],
     "type-enum": [
       2,
       "always",
@@ -21,5 +20,7 @@ module.exports = {
         "Remove",
       ],
     ],
+    "subject-empty": [2, "never"],
+    "subject-case": [2, "always", ["sentence-case", "start-case"]],
   },
 };

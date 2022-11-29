@@ -1,0 +1,14 @@
+name: DevelopBranchWorkflow
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  CreateIssuesFromTodos:
+    uses: ggqcompany/github-actions/.github/workflows/CreateIssueFromTodo.yml@main
+    secrets: inherit
+    with:
+      repository: ${{ github.repository }}
+      ref_name: ${{ github.ref_name }}

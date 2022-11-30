@@ -20,7 +20,7 @@ module.exports = {
         "Remove",
       ],
     ],
-    "subject-empty": [2, "never"],
-    "subject-case": [0, "never"],
+    "subject-case": [2, "always", ["sentence-case", "start-case"]],
+    "subject-max-length": [2, "always", 50],
   },
 };

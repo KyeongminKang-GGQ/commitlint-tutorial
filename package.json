@@ -18,9 +18,7 @@
   },
   "homepage": "https://github.com/KyeongminKang-GGQ/commitlint-tutorial#readme",
   "devDependencies": {
-    "husky": "^8.0.2"
-  },
-  "dependencies": {
+    "husky": "^8.0.2",
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0"
   }

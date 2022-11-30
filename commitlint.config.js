@@ -22,5 +22,6 @@ module.exports = {
     ],
     "subject-case": [2, "always", ["sentence-case", "start-case"]],
     "subject-max-length": [2, "always", 50],
+    "body-max-line-length": [2, "always", 72],
   },
 };
